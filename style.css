@@ -1,0 +1,91 @@
+/*Node Layout*/
+
+.node{
+  background-color: lightgray;
+  position: absolute;
+  border-radius: 10px;
+  width: 150px;
+}
+
+.nodeHeader{
+  background-color: darkgray;
+  border-radius: 10px;
+  padding: 4px;
+  cursor: grab;
+}
+
+.nodeHeader:active{
+  cursor: grabbing;
+}
+
+.nodeHeaderButton{
+  border-radius: 50%;
+  float: right;
+  outline: none;
+  background-color: lightgray;
+  border: none;
+  width: 17px;
+  height: 17px;
+  position: relative;
+  cursor: pointer;
+}
+
+.nodeHeaderButtonText{
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.nodeContent{
+  padding: 4px;
+}
+
+.nodeContentLeft{
+  position: absolute;
+  left: -6px;
+}
+
+.nodeContentRight{
+  position: absolute;
+  right: -6px;
+  text-align: right;
+}
+
+.nodeContentParent{
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+}
+
+/*Page Layout*/
+
+#canvas{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+  z-index: -5;
+}
+
+.noSelect{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
