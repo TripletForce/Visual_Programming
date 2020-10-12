@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body onkeypress="globalKeyPress(event)">
+    
+    <canvas id="canvas" width="1000" height="1000"></canvas>
+    <div id="container" class="noSelect"></div>
+
+  <!---GLOBALS--->
+    <script>
+    //Nessesary Globals
+    var nodes=[]; 
+    var uid=0;
+    function uniqueId(){uid++; return("uid"+uid);}
+    </script>
+
+  <!---NODES--->
+    <script src="methods/Button_Activation.js"></script>
+    <script src="methods/Value_Wait.js"></script>
+    <script src="methods/Output.js"></script>
+    <script src="methods/Text_To_Speech.js"></script>
+
+  <!---NODE DRIVERS--->
+    <!--Holds the HTML for Nodes-->
+    <script src="assets/Node_Template.js"></script>
+    <!--Node UI and Integration Method-->
+    <script src="assets/Method.js"></script>
+    <!--Keyboard Shortcuts-->
+    <script src="assets/Node_Creation.js"></script>
+    
+  </body>
+</html>
